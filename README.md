@@ -7,7 +7,10 @@ This project investigates the predictive contribution of **Social Determinants o
 ## Project Overview
 
 - **Task**: Binary classification (30-day readmission: Yes / No)
-- **Focus**: Assess the incremental predictive value of **10 SDOH domains** under both ML explainability and Bayesian feature selection
+- **Modeling stack**:
+  - **Python**: XGBoost classifier + SHAP (global/local importance)
+  - **R**: Bayesian Spike-and-Slab logistic regression (posterior importance + credible intervals)
+- **Focus**: 10 SDOH domains and whether they add predictive signal beyond clinical/utilization variables
 
 **Goals**:
 - Quantify the marginal contribution of **10 SDOH variables** to predictive performance
