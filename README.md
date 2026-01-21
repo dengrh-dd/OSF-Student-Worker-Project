@@ -7,32 +7,14 @@ Using a combination of **machine learning models (XGBoost with SHAP)** and **Bay
 
 ---
 
-## Research Question
-> **Do SDOH variables provide additional predictive signal for 30-day readmission once traditional clinical and utilization features are accounted for?**
+## Project Overview
 
-Specifically, we aim to:
-- Quantify the marginal contribution of SDOH variables to predictive performance
+- **Task**: Binary classification (Patient readmission condition within 30 days)
+
+**Goals**:
+- Quantify the marginal contribution of 10 SDOH variables to predictive performance
 - Assess variable importance using both frequentist and Bayesian perspectives
 - Understand whether limited importance reflects irrelevance or information redundancy
-
----
-
-## Data & Features
-- **Outcome**:  
-  - Binary indicator of 30-day readmission (`OUTCOME_BINARY`)
-- **SDOH Variables (10 domains)**:
-  - Alcohol use
-  - Financial resource strain
-  - Food insecurity
-  - Housing stability
-  - Physical activity
-  - Safety & domestic violence
-  - Social connection
-  - Stress
-  - Transportation
-  - Utilities
-
-Categorical SDOH variables were carefully encoded, with **missingness explicitly modeled as a category** where appropriate, to preserve information rather than discard observations.
 
 ---
 
@@ -81,15 +63,3 @@ Thus, while SDOH variables may offer limited incremental gain in short-term pred
 - Risk stratification and equity-focused analysis
 - Upstream intervention design
 - Health system planning and population health management
-
----
-
-## Takeaways
-- ✅ Predictive performance reached **AUC ≈ 0.75**
-- ⚠️ SDOH variables showed **limited standalone predictive power**
-- 💡 Results highlight **information redundancy rather than irrelevance**
-- 📌 Emphasizes the distinction between **prediction, explanation, and policy relevance**
-
----
-
-## Repository Structure
