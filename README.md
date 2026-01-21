@@ -36,6 +36,8 @@ This project investigates the predictive contribution of **Social Determinants o
   - Continuous spike-and-slab prior for variable selection
   - Posterior credible intervals used to assess variable importance
   - Domain-level inference by grouping one-hot encoded variables back to original SDOH domains
+ 
+**Note**: To avoid masking effects from a highly predictive feature produced by OSF’s in-house analytics system, we also report results from a variant of the analysis where this feature is excluded.
 
 ---
 
